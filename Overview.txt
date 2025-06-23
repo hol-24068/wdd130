@@ -1,0 +1,43 @@
+Portal Page:
+- Wireframe:
+    <--=-->
+    Front Page:
+        Top: (Header)
+            - Logo
+            - Name
+            - Search
+            - Social Media
+        Upper Mid: (Nav)         
+            - Purpose: Reinforcing bonds, forging Dad Lore, and growing in the beauty of God's creations
+            - Audience: 
+            - Portal & Portfolio
+        Lower Mid: (Main)
+            - About Me
+            - Experience
+            - Character
+        Bottom: (Footer)
+            - Contact Me
+            - Learn More
+            - Links
+    Colors:
+    - Background: #C0C0C0
+    - Segments: #DAA520
+    - Pattern: 
+    - Text: #2F4F4F
+    Heading:
+    - Title: h2
+    - Header: h3
+    - Nav: h4
+    - Main: h4
+    - Footer: h4
+    Font:
+    - Body Text: Khiara Script
+    - Image Text: Kalina
+
+- HTML
+- CSS
+- Contact Me
+
+
+
+

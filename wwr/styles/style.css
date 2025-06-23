@@ -1,0 +1,934 @@
+/* CSS Document */
+body {
+  display: block;
+  background-color: #838483;
+  min-width: 800px;
+  max-width: 1600px;
+  margin: 50px auto;
+}
+
+header {
+  background-color: #b19493;
+  margin: auto;
+  
+}
+
+header .far-left {
+
+}
+
+header .middle-left {
+
+}
+
+header .middle-right {
+
+}
+
+header .far-right {
+
+}
+
+Logo {
+  height: 400px;
+  width: 400px;
+  padding: 50px;
+}
+
+#logo_link img {
+  height: 400px;
+  width: 400px;
+}
+
+/*
+.container{
+  overflow: visble;
+}
+
+ Middle Left: Title 
+header .middle-left {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .middle-left h1 {
+  font-size: 2em;
+  margin: 0;
+  color: var(--headline-color-on-color);
+}
+
+/* Middle Right: Nav 
+header .middle-right {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 1.5em;
+}
+
+nav a {
+  color: var(--headline-color-on-color);
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+
+/* Right: Social Media 
+header .right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5em;
+}
+
+header .right img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+header .right img:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  display: flex;
+  gap: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #b19493;
+}
+/*
+nav a {
+  color: var(--headline-color-on-color);
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+
+
+
+
+
+
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--paragraph-background-color);
+}
+
+header .left,
+header .center,
+header .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .left {
+  align-items: flex-start;
+}
+
+header .right {
+  align-items: flex-end;
+}
+
+header .center h1 {
+  margin: 0;
+  font-size: 2em;
+  color: var(--headline-color-on-color);
+  white-space: nowrap;
+}
+
+header .center h2 {
+  margin: 0;
+  font-size: 1em;
+  color: var(--headline-color-on-color);
+  font-weight: normal;
+  padding-top: 0.5em;
+}
+
+
+
+/* header {
+
+}
+*/
+
+
+
+
+
+
+
+/* Body
+body {
+    background-color: #b19493;
+    min-width: 800px;
+    max-width: 1600px;
+    margin: 0px auto;
+}
+body, html {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 1em;
+    color: #fcfbfb;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+#logo_link {
+    height: 50px;
+    width: 50px;
+    padding-top: 50px;
+}
+
+Header
+header {
+    
+    background-color: #d9c2a3;
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 3em;
+    color: #fcfbfb;
+}
+header h2 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 1.5em;
+    color: #fcfbfb;
+}
+header h3 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 1.2em;
+    color: #fcfbfb;
+}
+header h4 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 1em;
+    color: #fcfbfb;
+}
+header h5 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 0.8em;
+    color: #fcfbfb;
+}
+header h6 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 0.6em;
+    color: #fcfbfb;
+}
+header h1:hover {
+    color: #d9c2a3;
+}
+header h2:hover {
+    color: #d9c2a3;
+}
+header h3:hover {
+    color: #d9c2a3;
+}
+header h4:hover {
+    color: #d9c2a3;
+}
+header h5:hover {
+    color: #d9c2a3;
+}
+header h6:hover {
+    color: #d9c2a3;
+}
+header h1 a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+header h2 a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+header h3 a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+header h4 a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+header h5 a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+header h6 a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+header h1 a:hover {
+    color: #d9c2a3;
+}
+header h2 a:hover {
+    color: #d9c2a3;
+}
+header h3 a:hover {
+    color: #d9c2a3;
+}
+header h4 a:hover {
+    color: #d9c2a3;
+}
+header h5 a:hover {
+    color: #d9c2a3;
+}
+header h6 a:hover {
+    color: #d9c2a3;
+}
+header h1:hover a {
+    color: #d9c2a3;
+}
+header h2:hover a {
+    color: #d9c2a3;
+}
+header h3:hover a {
+    color: #d9c2a3;
+}
+header h4:hover a {
+    color: #d9c2a3;
+}
+header h5:hover a {
+    color: #d9c2a3;
+}
+header h6:hover a {
+    color: #d9c2a3;
+}
+
+Navigation
+nav {
+
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+nav a {
+    text-decoration: none;
+    color: #fcfbfb;
+    text-align: center;
+    padding: 35px;
+}
+nav a:hover {
+    background-color: #b19493;
+    color: #d9c2a3;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+}
+
+p {
+    margin: 0px auto;
+    padding: 0px;
+    text-align: left;
+}
+
+
+
+#background {
+    height: 200px;
+    background-image: url(../images/wwr.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: repeat;
+    position: relative;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 3px;
+}
+#logo_link {
+    height: 150px;
+    width: 150px;
+    padding-top: 50px;
+}
+.logo {
+    width: 200px;
+    height: auto;
+    justify-self: left;
+}
+
+.book, .join {
+    background-color: #d9c2a3;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+main section img {
+    box-sizing: border-box;
+}
+
+.msg {
+    background-color: #d9c2a3;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.icon {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../images/wwr.jpg);
+    background-size: cover;
+    background-color: #b19493;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #d9c2a3;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+/*
+header {
+    display: grid;
+    grid-template-columns: auto;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: start;
+  padding: 2em;
+}
+
+Make cards span normally 
+.rivers-card, .camping-card, .rapids-card {
+  background-color: #f0f0f0;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+Mountains image takes full width 
+.mountains {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+ Message section takes full width too 
+.msg {
+  grid-column: 1 / -1;
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: left;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+Add styles for social media icons 
+.social img {
+  border: 2px solid var(--primary-color);   adds border 
+  background-color: var(--secondary-color);   background for default state 
+  border-radius: 10px;  optional: rounded corners 
+  padding: 8px;
+  margin: 5px;
+  width: 50px;   control size 
+  height: 50px;
+  transition: all 0.3s ease;
+}
+
+.social img:hover {
+  background-color: var(--accent1-color);  hover background 
+  border-color: var(--accent1-color);    hover border color 
+}
+
+:root {
+  change the values below to your colors from your palette 
+  --primary-color: #396E94   ;
+  --secondary-color: #E7C24F ;
+  --accent1-color: #A42212;
+  --accent2-color: white;
+
+  change the values below to your chosen font(s) 
+  --heading-font: "IM Fell French Canon";
+  --paragraph-font: Lato, Helvetica, sans-serif;
+
+    these colors below should be chosen from among your palette colors above 
+  --headline-color-on-white: #396E94;  headlines on a white background 
+  --headline-color-on-color: white; headlines on a colored background 
+  --paragraph-color-on-white: #396E94; paragraph text on a white background 
+  --paragraph-color-on-color: white; paragraph text on a colored background  
+  --paragraph-background-color: #396E94  ;
+  --nav-link-color: #396E94;
+  --nav-background-color: #D4AC0D;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #396E94;
+}
+
+Look around below...but DON'T CHANGE ANYTHING!
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+.sitemap > div {
+  text-align: center;
+}
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+/* CSS Document 
+Body 
+body {
+    background-color: #b19493;
+    min-width: 800px;
+    max-width: 1600px;
+    margin: 0px auto;
+}
+body, html {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 1em;
+    color: #fcfbfb;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+Header
+header {
+    background-color: #b19493;
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 3em;
+    color: #fcfbfb;
+}
+header h2 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 1.5em;
+    color: #fcfbfb;
+}
+header h3 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 1.2em;
+    color: #fcfbfb;
+}
+header h4 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 1em;
+    color: #fcfbfb;
+}
+header h5 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 0.8em;
+    color: #fcfbfb;
+}
+header h6 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 0.6em;
+    color: #fcfbfb;
+}
+header h1:hover {
+    color: #d9c2a3;
+}
+header h2:hover {
+    color: #d9c2a3;
+}
+header h3:hover {
+    color: #d9c2a3;
+}
+header h4:hover {
+    color: #d9c2a3;
+}
+header h5:hover {
+    color: #d9c2a3;
+}
+header h6:hover {
+    color: #d9c2a3;
+}
+header h1 a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+header h2 a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+header h3 a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+header h4 a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+header h5 a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+header h6 a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+header h1 a:hover {
+    color: #d9c2a3;
+}
+header h2 a:hover {
+    color: #d9c2a3;
+}
+header h3 a:hover {
+    color: #d9c2a3;
+}
+header h4 a:hover {
+    color: #d9c2a3;
+}
+header h5 a:hover {
+    color: #d9c2a3;
+}
+header h6 a:hover {
+    color: #d9c2a3;
+}
+header h1:hover a {
+    color: #d9c2a3;
+}
+header h2:hover a {
+    color: #d9c2a3;
+}
+header h3:hover a {
+    color: #d9c2a3;
+}
+header h4:hover a {
+    color: #d9c2a3;
+}
+header h5:hover a {
+    color: #d9c2a3;
+}
+header h6:hover a {
+    color: #d9c2a3;
+}
+
+Navigation
+nav {
+    background-color: #d9c2a3;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+nav a {
+    text-decoration: none;
+    color: #fcfbfb;
+    text-align: center;
+    padding: 35px;
+}
+nav a:hover {
+    background-color: #b19493;
+    color: #d9c2a3;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+}
+
+p {
+    margin: 0px auto;
+    padding: 0px;
+    text-align: left;
+}
+
+
+main {
+    background-color: #fcfbfb;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+#background {
+    height: 200px;
+    background-image: url(../images/wwr.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: repeat;
+    position: relative;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 3px;
+}
+#logo_link {
+    height: 50px;
+    width: 50px;
+    padding-top: 50px;
+}
+
+.book, .join {
+    background-color: #d9c2a3;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+main section img {
+    box-sizing: border-box;
+}
+
+.msg {
+    background-color: #d9c2a3;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.icon {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../images/wwr.jpg);
+    background-size: cover;
+    background-color: #b19493;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #d9c2a3;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+*/

@@ -1,0 +1,14 @@
+WWR:
+Irma Harpoon: Image Reference
+https://www.colorlabs.net/
+
+#1b1919
+#b19493
+#645b5f
+#838483
+#838483
+#807a8c
+
+Padding: trbl
+Margin: (1#) trbl/(2#) tb rl
+(Update Site-Plan)

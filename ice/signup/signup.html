@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Feed Sign Up</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        /* 🔲 Page background and centering */
+        body {
+        background: rgb(120, 96, 64);
+        margin: 0;
+        padding: 2rem;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        }
+
+        /* 🧱 Main page content wrapper */
+        .main-wrapper {
+        background-color: #3e2f1e;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        max-width: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        /* 🖼 Top image */
+        .top-banner {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        /* 📋 Form styling */
+        .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem 2rem;
+        width: 100%;
+        margin-bottom: 2rem;
+        color: #fff;
+        }
+
+        .form-grid label {
+        text-align: right;
+        align-self: center;
+        }
+
+        .form-grid input,
+        .form-grid select,
+        .form-grid button {
+        width: 100%;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 4px;
+        }
+
+        /* ✅ Better grouping for radio + checkbox rows */
+        .inline-group {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        }
+
+        /* 📚 Scripture book covers */
+        .scripture-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        }
+
+        .scripture-row img {
+        width: 120px;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        transition: transform 0.3s ease;
+        }
+
+        .scripture-row img:hover {
+        transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+    <img src="/ice/signup/images/jesus_feeds_5000.jpeg" alt="Jesus feeds the 5000" class="top-banner">
+    <form class="form-grid">
+        <label for="username">User Name:</label>
+        <input type="text" id="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <label for="gender">Gender:</label>
+        <div class="inline-group">
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        </div>
+        <label></label>
+        <input type="checkbox"> Subscribe to newsletter
+        <label></label>
+        <input type="checkbox"> I acknowledge the terms and conditions
+        <label></label>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="scripture-row">
+        <img src="/ice/signup/images/book_of_mormon.webp" alt="Book of Mormon">
+        <img src="/ice/signup/images/doctrine_and_covenants.webp" alt="Doctrine and Covenants">
+        <img src="/ice/signup/images/new_testament.webp" alt="New Testament">
+        <img src="/ice/signup/images/old_testament.webp" alt="Old Testament">
+        <img src="/ice/signup/images/pearl_of_great_price.webp" alt="Pearl of Great Price">
+    </div>
+    </div>
+    <div id="output"></div>
+    <script>
+        // Here is some Javascript to start looking forward to wdd131
+        document.getElementById("closeBtn").addEventListener("click", function () {
+            document.getElementById("formContainer").style.display = "none";
+         });
+        const form = document.getElementById('myForm');
+        const output = document.getElementById('output');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Stop form from actually submitting
+
+            const formData = new FormData(form);
+            const entries = [];
+
+            for (const [key, value] of formData.entries()) {
+                if (key == "password") {
+                    entries.push(`<strong>${key}</strong>: ${value} (you should probably encrypt the password)`);
+                } else {
+                    entries.push(`<strong>${key}</strong>: ${value}`);
+                }
+            }
+
+            output.innerHTML = `
+            <br>  
+            <h3>Here is the data that would be sent to the server:</h3>
+            <ul>
+                ${entries.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+            `;
+                });
+    </script>
+
+</body>
+
+</html>

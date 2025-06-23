@@ -1,0 +1,33 @@
+body {
+  display: block;
+  background-color: #b19493;
+  grid-template-columns: 50px repeat(4, 1fr) 50px;
+  grid-template-rows: 50px repeat(3, 1fr) 50px;
+  
+}
+
+
+
+/*
+body {
+  background-color: #b19493;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+  header {
+    background-color: #4a2c2a;
+    padding: 50px;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
