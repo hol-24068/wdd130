@@ -9,6 +9,8 @@ body {
   background-color: #838483;
   font-family: Arial, sans-serif;
 }
+
+/* Header Styles */
 header {
   display: flex;
   justify-content: space-between;
@@ -16,24 +18,24 @@ header {
   padding: 1em 2em;
   background-color: #b19493;
   flex-wrap: wrap; /* optional for responsiveness */
-}.stacked-header {
+}
+
+.stacked-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #b19493;
   padding: 2em;
   gap: 1.5em;
-}/* Layout grid */
+}
+
 .grid-header {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 2em;
-  background-color: #b19493;
-  padding: 0;         /* set to zero first */
-  padding: 2em 2em 1em; /* optional fine-tuned spacing */
+  padding: 2em 2em 1em;
 }
 
-/* Left: logo */
 .header-left {
   display: flex;
   justify-content: center;
@@ -45,7 +47,6 @@ header {
   width: auto;
 }
 
-/* Right column: stacked sections */
 .header-right {
   display: flex;
   flex-direction: column;
@@ -53,20 +54,21 @@ header {
   gap: 1em;
 }
 
-/* Search bar */
+/* Search Bar */
 .header-search {
   display: flex;
   gap: 0.5em;
   width: 100%;
 }
+
 .header-search input {
   flex: 1;
   padding: 0.5em 1em;
   font-size: 1em;
   border-radius: 5px;
   border: 1px solid #888;
-  min-width: 0;
 }
+
 .header-search button {
   padding: 0.5em 1em;
   font-size: 1em;
@@ -76,16 +78,15 @@ header {
   border-radius: 5px;
   cursor: pointer;
 }
+
 /* Title */
 .header-title h1,
 .site-title {
   font-family: 'Dancing Script', cursive;
   color: black;
   font-size: 2.5em;
-  margin: 0;              /* critical */
-  padding: 0;             /* in case default applied */
   text-align: center;
-  line-height: 1;         /* prevents overflow spacing */
+  line-height: 1;
 }
 
 /* Navigation */
@@ -109,6 +110,8 @@ header {
   background-color: #396e94;
   border-radius: 5px;
 }
+
+/* Image Row */
 .image-row-list {
   display: flex;
   flex-direction: column;
@@ -119,11 +122,12 @@ header {
 .image-row {
   background-color: #b19493;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 1.5em;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  min-height: 350px;
 }
 
 .image-row h2 {
@@ -133,6 +137,7 @@ header {
   margin-bottom: 1em;
 }
 
+/* Hero Message */
 #hero-msg {
   background-color: #b19493;
   padding: 2em;
@@ -160,7 +165,7 @@ header {
   margin-top: 1em;
 }
 
-/* THIS controls side-by-side layout */
+/* Layout for side-by-side content */
 .row-content {
   display: flex;
   gap: 2em;
@@ -172,19 +177,19 @@ header {
 
 .row-content img {
   width: 300px;
-  height: auto;
+  height: 200px;
   object-fit: cover;
   border-radius: 5px;
 }
 
 .row-content p {
-  font-family: Arial, sans-serif;
   font-size: 1em;
   color: #333;
   margin: 0;
   max-width: 400px;
 }
 
+/* Footer Styles */
 .site-footer {
   background-color: #b19493;
   color: black;
@@ -194,7 +199,7 @@ header {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   width: 90%;
   max-width: 1000px;
-  text-align: left;  /* align text in the box */
+  text-align: left;
 }
 
 .footer-content {
@@ -242,4 +247,16 @@ header {
 
 .footer-right img:hover {
   transform: scale(1.1);
+}
+
+/* Footer Specific */
+footer {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+
+footer > h1, header > h2 {
+  color: var(--headline-color-on-color);
 }
