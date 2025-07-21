@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <title>Site Plan</title>
-    <link type="text/css" rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="./images/river_icon.png" type="image/png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the WDD130-A1 Web Projects portal page. This site showcases various web projects including a site plan portal page and a white water rafting website.">
-    <meta name="keywords" content="WDD130, web projects, site plan, white water rafting, web design, HTML, CSS">
-    <meta name="author" content="Bradley Holbrook">
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-    <header>
-        <h1>Welcome to WDD130-A1 Web Projects</h1>
-    <nav>
-        <a href="./site-plan-portal-page.html">Site Plan Portal Page</a>
-        <a href="./styles/style.css">Site Plan Portal Page</a>
-        <a href="./wwr/index.html">White Water Rafting Website</a>
-        <a href="./wwr/styles/style.css">White Water Rafting Siteplan Portal Page</a>
-        <a href="./wwr/site-plan-rafting.html">White Water Rafting Siteplan Page</a>
-        <a href="./wwr/styles/site-plan-rafting.css">White Water Rafting Siteplan Portal Page</a>
-        <a href="./images/twitter.png">Twitter</a>
-        <a href="./images/rivers.jpg">Rivers</a>
-        <a href="./images/river_icon.png">River Logo</a>
-        <a href="./images/rapids.jpg">Rapids</a>
-        <a href="./images/oars.png">Oars</a>
-        <a href="./images/mountains.jpg">Mountains</a>
-        <a href="./images/instagram.png">Instagram</a>
-        <a href="./images/icenter.png">iCenter</a>
-        <a href="./images/fire_icon.png">Fire</a>
-        <a href="./images/twitter.png">Wireframe</a>
-        <a href="./images/twitter.png">Wireframe</a>
-        <a href="./images/twitter.png">Wireframe</a>
-        <a href="./images/twitter.png">Wireframe</a>
-        <a href="./images/twitter.png">Wireframe</a>
-
-        <a href="wireframe.html">Positioning Activity</a>
-        <a href=""</a>
-        <a href=""</a>
-        <a href=""</a>
-    </nav>  
-        <p>Bradley Holbrook - WDD130-A1</p>     
-    </header>
-    <main>
-      
-    </main>
-    <footer>
-
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD130 Portal Page</title>
+  <meta name="description" content="WDD130-A1 Web Projects by Bradley Holbrook: Featuring a portal page, white water rafting site, and planning documents.">
+  <meta name="keywords" content="WDD130, HTML, CSS, web design, site plan, rafting">
+  <meta name="author" content="Bradley Holbrook">
+  <link rel="icon" href="./images/river_icon.png" type="image/png">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main class="main-content container">
+    <section>
+      <h2>Welcome!</h2>
+      <p>This is the WDD130 Portal Page where you'll find links to my site plan, projects, and design documents. Explore the various sections to see my web development progress!</p>
+  </section>
+  <section class="project-media">
+    <h2>Project Media Gallery</h2>
+    <div class="media-grid">
+      <figure>
+        <img src="./images/camping.jpg" alt="Tent camping near snow-covered mountains">
+        <figcaption>Mountain Camping Adventure</figcaption>
+      </figure>
+      <figure>
+        <img src="./images/rafters.jpg" alt="White water rafting group on a river">
+        <figcaption>White Water Rafting</figcaption>
+      </figure>
+      <figure>
+        <img src="./ice/gallery/images/big/small/img5.jpg" alt="The crucifixion of Jesus Christ">
+        <figcaption>Christ on the Cross</figcaption>
+      </figure>
+      <figure>
+        <img src="./ice/gallery/images/big/small/img7.jpg" alt="Jesus calming the storm at sea">
+        <figcaption>Peace Be Still</figcaption>
+      </figure>
+      <figure>
+        <img src="./ice/fathersday/images/fathersday.png" alt="Father and son walking into sunset">
+        <figcaption>Father’s Day Tribute</figcaption>
+      </figure>
+      <figure>
+        <img src="./images/rivers.jpg" alt="River in forest with rapids">
+        <figcaption>Peaceful River Landscape</figcaption>
+      </figure>
+    </div>
+  </section>
+    <section class="project-links">
+      <h2>Project Links</h2>
+      <ul>
+        <li><a href="./site-plan-portal-page.html">Site Plan Portal Page</a></li>
+        <li><a href="./wwr/index.html">White Water Rafting Site</a></li>
+        <li><a href="./wwr/site-plan-rafting.html">Rafting Site Plan Document</a></li>
+        <li><a href="./wireframe.html">Wireframe Design Document</a></li>
+      </ul>
+    </section>
+  </main>
+  <div id=""footer"></div>
+  <script>
+      document.querySelector('.search-bar').addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        const links = document.querySelectorAll('.middle-links a');
+        links.forEach(link => {
+          if (link.textContent.toLowerCase().includes(query)) {
+            link.style.display = 'inline';
+          } else {
+            link.style.display = 'none';
+          }
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch('header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("header").innerHTML = data;
+          });
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("footer").innerHTML = data;
+          });
+       });
+</script>
+</body>
 </html>

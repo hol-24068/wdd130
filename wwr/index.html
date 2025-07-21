@@ -4,117 +4,103 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/style.css">
         <title>Whitewater Rafting Vacations | White Water Boating | Home</title>
     </head>
     <body>
     <!-- Header-->
-    <header>
-        <!-- Left: Logo -->
-        <div class="header">
-            <a id="logo_link" href="#">
-                <img src="../images/images/wwrlogo.png" alt="White Water Rafting Logo">
-            </a>
+    <header class="grid-header">
+        <!-- LEFT: Logo Column -->
+        <div class="header-left">
+            <img src="../images/images/wwrlogo.png" alt="White Water Rafting Logo" class="header-logo">
         </div>
-        <!-- Middle Left: Title -->
-        <div class="middle-left">
-                <h1>White Water Rafting Vacation+s</h1>
-        </div>
-        <!-- Middle Right: Pages -->
-        <!-- Navigation -->
-        <div class="middle-right">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="site-plan-rafting.html">Site Plan</a>
-                <a href="wireframe.html">Wireframe</a>
-                <a href="contactus.html">Contact Us</a>
-                <a class="join" href="../wwr/index.html">Join Us</a>
-                <a href="#">Trips</a>
-                <a href="#">About</a>
-                <a href="#">Page 2</a>
-            </nav>
-            <h1 class="home-title">White Water Rafting Vacations</h1>
-            <!-- Right: Social Media -->
-        <div class="right">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook icon">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.png" alt="Twitter icon">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Instagram icon">
-            </a>
+        <!-- RIGHT: Stacked Content Column -->
+        <div class="header-right">
+        <!-- Top: Search Bar -->
+            <div class="header-search">
+                    <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        <!-- Middle: Title -->
+            <div class="header-title">
+                <h1 class="site-title">White Water Rafting Vacations</h1>
+            </div>
+        <!-- Bottom: Navigation -->
+            <div class="header-nav">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="contactus.html">Contact Us</a>
+                </nav>
+            </div>
         </div>
     </header>
-    <main class="home-grid">
-        <div>
-            <section class="rivers-card">
-                <img class="card-img" src="../images/rivers.jpg" alt="river in forest">
-                <img class="icon" src="../images/river_icon.png" alt="river icon">
-                <h2>Rivers</h2>
-            </section>
-            <section class="camping-card">
-                <img class="card-img" src="../images/camping.jpg" alt="tent in mountains">
-                <img class="icon" src="../images/fire_icon.png" alt="fire icon">
-                <h2>Camping</h2>
-            </section>
-            <section class="rapids-card">
-                <img class="card-img" src="../images/rapids.jpg" alt="rafting boat">
-                <img class="icon" src="../images/oars.png" alt="oars icon">
-                <h2>Rapids</h2>
-            </section>
-            <img class="mountains" src="../images/mountains.jpg" alt="Misty mountains">
-            <section class="msg">
-                <h2>More Than Just The Thrill</h2>
-                <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors. </p>
-                <a class='join' href="../wwr/index.html">Join Us</a>
-            </section>
-        </div>
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
+                <img id="hero-img" src="..." alt="People enjoying white water rafting">
             </div>
         </div>
-        <div>
-            <section id="hero-msg">
-                <h3 class="home-title">Have An Adventure</h3>
-                <h3>Make Memories with Dry Oar</h3> 
-                <div class="button-box">
-                    <a class="book" href="rates.html">Book Now</a>
-                </div>
-            </section>
-        </div>
+        <section id="hero-msg">
+            <h3 class="home-title">Have An Adventure</h3>
+            <h3>Make Memories with Dry Oar</h3> 
+            <div class="button-box">
+            <a class="book" href="rates.html">Book Now</a>
+            </div>
+        </section>
+    <main class="image-row-list">
+        <section class="image-row">
+        <h2>Rivers</h2>
+        <div class="row-content"></div>
+            <img src="../images/rivers.jpg" alt="River through a forest">
+            <p>Explore the winding rivers that challenge and inspire adventurers of all levels.</p>
+        </section>
+        <section class="image-row">
+        <h2>Camping</h2>
+        <div class="row-content"></div>
+            <img src="../images/camping.jpg" alt="Tent in the mountains">
+            <p>Experience camping in the heart of nature with breathtaking views and tranquil nights.</p>
+        </section>
+        <section class="image-row">
+        <h2>Rapids</h2>
+        <div class="row-content"></div>
+            <img src="..." alt="Rafting team in rapids">
+            <p>Take on thrilling rapids with our expert guides for an unforgettable ride.</p>
+        </section>
+        <section class="image-row">
+        <h2>More Than Just The Thrill</h2>
+        <div class="row-content"></div>
+            <img src="../images/mountains.jpg" alt="Sun rays through the mountains">
+            <p>Our adventures are about connection, scenery, and lasting memories — not just adrenaline.</p>
+        </section>
     </main>
-    <footer>
-        <nav class="footer-nav">
-            <div>
-                <section>
-                    <h2>
-                        Dry Oar &copy; 20XX - Your First and Last Name Here
-                        <a href=".../wwr/site-plan-rafting.html">Site Plan</a>
-                        <a href="../wwr/contactus.html">Contact Us</a>
-                    </h2>
-                    <h3>White Water Rafting Vacations</h3>
-                    <h4>
-                        1234 River Road
-                        Boise, ID 83702
-                        (208) 555-1234
-                    </h4>
-                </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+            <p><strong>Dry Oar &copy; 2025 - Your Full Name</strong></p>
+            <p>
+                <a href="../wwr/site-plan-rafting.html">Site Plan</a> |
+                <a href="../wwr/contactus.html">Contact Us</a>
+            </p>
+            <p><strong>White Water Rafting Vacations</strong></p>
+            <p>
+                1234 River Road<br>
+                Boise, ID 83702<br>
+                (208) 555-1234
+            </p>
             </div>
-                <div class="social">
-                    <a href="https://facebook.com">
-                        <img src="../images/facebook.png" alt="fb icon">
-                    </a>
-                    <a href="https://twitter.com">
-                        <img src="../images/twitter.png" alt="twitter icon">
-                    </a>
-                    <a href="https://instagram.com">
-                        <img src="../images/instagram.png" alt="instagram icon">
-                    </a>
-                </div>
-            </nav>
-        </footer>
+            <div class="footer-right social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="../images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="../images/twitter.png" alt="Twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="../images/instagram.png" alt="Instagram icon">
+            </a>
+            </div>
+        </div>
+    </footer>
     </body>
 </html>

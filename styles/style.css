@@ -59,6 +59,56 @@ header {
   min-height: 60vh;
   background-color: #1a1a1a;
 }
+.project-media {
+  padding: 40px 20px;
+  background-color: #121212;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.project-media h2 {
+  color: #ff9999;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.media-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.media-grid figure {
+  width: 250px;
+  margin: 0;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.media-grid figure:hover {
+  transform: scale(1.03);
+}
+
+.media-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.media-grid figcaption {
+  padding: 10px;
+  font-size: 0.95rem;
+  color: #ccc;
+  background-color: #2a2a2a;
+}
+.project-links {
+  padding: 40px 20px;
+  background-color: #121212;
+  color: #e0e0e0;
+  text-align: center;
+}
 footer {
   background-color: #1b1a1a;
   padding: 20px;
